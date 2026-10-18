@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utility: visually hidden but accessible to screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Scroll-reveal: elements start hidden */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+/* Scroll-reveal: element is visible after IntersectionObserver adds the attribute */
+[data-revealed] {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 500ms ease-out,
+    transform 500ms ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-revealed] {
+    transition: none;
+  }
+}
+
+/* Focus-visible outlines for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}

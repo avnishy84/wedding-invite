@@ -1,0 +1,58 @@
+/* Self-hosted fonts via @fontsource */
+@import '@fontsource/cinzel-decorative/400.css';
+@import '@fontsource/cinzel-decorative/700.css';
+@import '@fontsource/cormorant-garamond/400.css';
+@import '@fontsource/cormorant-garamond/400-italic.css';
+@import '@fontsource/cormorant-garamond/600.css';
+@import '@fontsource/cormorant-garamond/600-italic.css';
+@import '@fontsource/pinyon-script/400.css';
+@import '@fontsource/tiro-devanagari-hindi/400.css';
+@import '@fontsource/yatra-one/400.css';
+
+/* Fluid type scale */
+h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 8vw, 5rem);
+  line-height: 1.1;
+  color: var(--maroon);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  line-height: 1.2;
+  color: var(--maroon);
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  line-height: 1.3;
+  color: var(--maroon);
+}
+
+h4 {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  line-height: 1.4;
+  color: var(--maroon);
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  line-height: 1.6;
+}
+
+/* Hindi / Devanagari: switch fonts when lang=hi is active */
+:lang(hi) h1,
+:lang(hi) h2,
+:lang(hi) h3,
+:lang(hi) h4 {
+  font-family: var(--font-devanagari);
+}
+
+:lang(hi) p,
+:lang(hi) body {
+  font-family: var(--font-devanagari);
+}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none" stroke="currentColor">
+  <!-- Outer border -->
+  <rect x="5" y="5" width="390" height="290" stroke-width="2"/>
+  <!-- Inner border -->
+  <rect x="12" y="12" width="376" height="276" stroke-width="1"/>
+  <!-- Corner flourishes — top left -->
+  <path d="M 5 35 L 5 5 L 35 5" stroke-width="3" fill="none"/>
+  <path d="M 12 38 L 12 12 L 38 12" stroke-width="1.5" fill="none"/>
+  <circle cx="18" cy="18" r="4" fill="currentColor" stroke="none" opacity="0.5"/>
+  <!-- Corner flourishes — top right -->
+  <path d="M 365 5 L 395 5 L 395 35" stroke-width="3" fill="none"/>
+  <path d="M 362 12 L 388 12 L 388 38" stroke-width="1.5" fill="none"/>
+  <circle cx="382" cy="18" r="4" fill="currentColor" stroke="none" opacity="0.5"/>
+  <!-- Corner flourishes — bottom left -->
+  <path d="M 5 265 L 5 295 L 35 295" stroke-width="3" fill="none"/>
+  <path d="M 12 262 L 12 288 L 38 288" stroke-width="1.5" fill="none"/>
+  <circle cx="18" cy="282" r="4" fill="currentColor" stroke="none" opacity="0.5"/>
+  <!-- Corner flourishes — bottom right -->
+  <path d="M 365 295 L 395 295 L 395 265" stroke-width="3" fill="none"/>
+  <path d="M 362 288 L 388 288 L 388 262" stroke-width="1.5" fill="none"/>
+  <circle cx="382" cy="282" r="4" fill="currentColor" stroke="none" opacity="0.5"/>
+  <!-- Mid-side accent marks -->
+  <path d="M 196 5 L 200 9 L 204 5" fill="currentColor" stroke="none" opacity="0.4"/>
+  <path d="M 196 295 L 200 291 L 204 295" fill="currentColor" stroke="none" opacity="0.4"/>
+  <path d="M 5 146 L 9 150 L 5 154" fill="currentColor" stroke="none" opacity="0.4"/>
+  <path d="M 395 146 L 391 150 L 395 154" fill="currentColor" stroke="none" opacity="0.4"/>
+</svg>

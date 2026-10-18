@@ -1,0 +1,79 @@
+.venue {
+  background: var(--peacock);
+  color: var(--ivory);
+  padding: clamp(3rem, 8vw, 6rem) var(--space-6);
+  text-align: center;
+}
+
+.venue h2,
+.venue h3 {
+  color: var(--ivory);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.venueName {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.8rem);
+  margin: 0;
+}
+
+.address {
+  opacity: 0.9;
+  font-style: italic;
+  margin: 0;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+}
+
+.travelBlock {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  width: 100%;
+}
+
+.travelBlock p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.travelHeading {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  color: var(--gold-light);
+  margin-top: 0;
+}
+
+.mapsBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gold);
+  color: var(--maroon-deep);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-sm);
+  min-height: 44px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 200ms ease;
+}
+
+.mapsBtn:hover {
+  background: var(--gold-light);
+}
+
+.mapsBtn:focus-visible {
+  outline: 2px solid var(--ivory);
+  outline-offset: 2px;
+}

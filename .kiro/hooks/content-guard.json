@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Content Guard",
+      "trigger": "PostFileSave",
+      "description": "Scan saved component files for hard-coded names, dates, phones, or event names that belong in wedding.ts.",
+      "matcher": "src/components/.*\\.tsx$",
+      "action": {
+        "type": "command",
+        "command": "node -e \"const i=require('fs').readFileSync(0,'utf8');const d=JSON.parse(i);const f=d.file||'';if(!f)process.exit(0);const src=require('fs').readFileSync(f,'utf8');const patterns=[/\\\"Ankita\\\"|\\\"Avnish\\\"|'Ankita'|'Avnish'/,/\\+91\\d{10}/,/\\d{4}-\\d{2}-\\d{2}/,/(Haldi|Mehndi|Sangeet|Reception|Phere)/];const labels=['Hardcoded name','Hardcoded phone','Hardcoded date','Hardcoded event name'];let found=false;patterns.forEach((p,idx)=>{const m=src.match(p);if(m){console.error('CONTENT-GUARD ['+labels[idx]+']: \\\"'+m[0]+'\\\" found in '+f+' — move to src/content/wedding.ts');found=true;}});if(found)process.exit(1);\"",
+        "timeout": 15
+      }
+    }
+  ]
+}

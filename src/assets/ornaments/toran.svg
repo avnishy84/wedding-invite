@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 80" fill="none" stroke="currentColor" stroke-width="1.5">
+  <!-- Hanging string/rope -->
+  <path d="M 0 10 Q 75 20 150 10 Q 225 0 300 10 Q 375 20 450 10 Q 525 0 600 10" stroke-width="1"/>
+  <!-- Flower 1 at x=75 -->
+  <circle cx="75" cy="35" r="12" fill="currentColor" opacity="0.15"/>
+  <circle cx="75" cy="35" r="12"/>
+  <circle cx="75" cy="35" r="5" fill="currentColor" opacity="0.4" stroke="none"/>
+  <path d="M 75 20 L 78 28 L 75 23 L 72 28 Z" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 75 20 L 78 28 L 75 23 L 72 28 Z" transform="rotate(45 75 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 75 20 L 78 28 L 75 23 L 72 28 Z" transform="rotate(90 75 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 75 20 L 78 28 L 75 23 L 72 28 Z" transform="rotate(135 75 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 75 20 L 78 28 L 75 23 L 72 28 Z" transform="rotate(180 75 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 75 20 L 78 28 L 75 23 L 72 28 Z" transform="rotate(225 75 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 75 20 L 78 28 L 75 23 L 72 28 Z" transform="rotate(270 75 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 75 20 L 78 28 L 75 23 L 72 28 Z" transform="rotate(315 75 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <!-- Stem from string to flower 1 -->
+  <line x1="75" y1="18" x2="75" y2="22" stroke-width="1"/>
+  <!-- Flower 2 at x=225 -->
+  <circle cx="225" cy="40" r="10" fill="currentColor" opacity="0.15"/>
+  <circle cx="225" cy="40" r="10"/>
+  <circle cx="225" cy="40" r="4" fill="currentColor" opacity="0.4" stroke="none"/>
+  <path d="M 225 27 L 228 34 L 225 29 L 222 34 Z" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 225 27 L 228 34 L 225 29 L 222 34 Z" transform="rotate(60 225 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 225 27 L 228 34 L 225 29 L 222 34 Z" transform="rotate(120 225 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 225 27 L 228 34 L 225 29 L 222 34 Z" transform="rotate(180 225 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 225 27 L 228 34 L 225 29 L 222 34 Z" transform="rotate(240 225 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 225 27 L 228 34 L 225 29 L 222 34 Z" transform="rotate(300 225 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <line x1="225" y1="5" x2="225" y2="29" stroke-width="1"/>
+  <!-- Flower 3 at x=300 (centre, larger) -->
+  <circle cx="300" cy="42" r="14" fill="currentColor" opacity="0.15"/>
+  <circle cx="300" cy="42" r="14"/>
+  <circle cx="300" cy="42" r="6" fill="currentColor" opacity="0.4" stroke="none"/>
+  <path d="M 300 25 L 304 34 L 300 28 L 296 34 Z" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 300 25 L 304 34 L 300 28 L 296 34 Z" transform="rotate(45 300 42)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 300 25 L 304 34 L 300 28 L 296 34 Z" transform="rotate(90 300 42)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 300 25 L 304 34 L 300 28 L 296 34 Z" transform="rotate(135 300 42)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 300 25 L 304 34 L 300 28 L 296 34 Z" transform="rotate(180 300 42)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 300 25 L 304 34 L 300 28 L 296 34 Z" transform="rotate(225 300 42)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 300 25 L 304 34 L 300 28 L 296 34 Z" transform="rotate(270 300 42)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 300 25 L 304 34 L 300 28 L 296 34 Z" transform="rotate(315 300 42)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <line x1="300" y1="10" x2="300" y2="27" stroke-width="1"/>
+  <!-- Flower 4 at x=375 -->
+  <circle cx="375" cy="40" r="10" fill="currentColor" opacity="0.15"/>
+  <circle cx="375" cy="40" r="10"/>
+  <circle cx="375" cy="40" r="4" fill="currentColor" opacity="0.4" stroke="none"/>
+  <path d="M 375 27 L 378 34 L 375 29 L 372 34 Z" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 375 27 L 378 34 L 375 29 L 372 34 Z" transform="rotate(60 375 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 375 27 L 378 34 L 375 29 L 372 34 Z" transform="rotate(120 375 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 375 27 L 378 34 L 375 29 L 372 34 Z" transform="rotate(180 375 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 375 27 L 378 34 L 375 29 L 372 34 Z" transform="rotate(240 375 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 375 27 L 378 34 L 375 29 L 372 34 Z" transform="rotate(300 375 40)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <line x1="375" y1="5" x2="375" y2="29" stroke-width="1"/>
+  <!-- Flower 5 at x=525 -->
+  <circle cx="525" cy="35" r="12" fill="currentColor" opacity="0.15"/>
+  <circle cx="525" cy="35" r="12"/>
+  <circle cx="525" cy="35" r="5" fill="currentColor" opacity="0.4" stroke="none"/>
+  <path d="M 525 20 L 528 28 L 525 23 L 522 28 Z" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 525 20 L 528 28 L 525 23 L 522 28 Z" transform="rotate(45 525 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 525 20 L 528 28 L 525 23 L 522 28 Z" transform="rotate(90 525 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 525 20 L 528 28 L 525 23 L 522 28 Z" transform="rotate(135 525 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 525 20 L 528 28 L 525 23 L 522 28 Z" transform="rotate(180 525 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 525 20 L 528 28 L 525 23 L 522 28 Z" transform="rotate(225 525 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 525 20 L 528 28 L 525 23 L 522 28 Z" transform="rotate(270 525 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <path d="M 525 20 L 528 28 L 525 23 L 522 28 Z" transform="rotate(315 525 35)" fill="currentColor" stroke="none" opacity="0.6"/>
+  <line x1="525" y1="18" x2="525" y2="22" stroke-width="1"/>
+  <!-- Leaf accents -->
+  <path d="M 155 38 C 160 30 170 30 175 38" stroke-width="1"/>
+  <path d="M 425 38 C 430 30 440 30 445 38" stroke-width="1"/>
+</svg>

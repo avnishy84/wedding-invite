@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Pre-Deploy Check",
+      "trigger": "UserPromptSubmit",
+      "description": "Run lint+test+build only when prompt contains 'run pre-deploy check'.",
+      "action": {
+        "type": "command",
+        "command": "node -e \"const i=require('fs').readFileSync(0,'utf8');let d={};try{d=JSON.parse(i);}catch(e){}const prompt=(d.prompt||'').toLowerCase();if(!prompt.includes('run pre-deploy check'))process.exit(0);const {execSync}=require('child_process');let ok=true;const run=(label,cmd)=>{try{console.log('>>> '+label);const out=execSync(cmd,{encoding:'utf8',stdio:'pipe'});console.log(out||'(no output)');console.log('PASS: '+label);}catch(e){console.error('FAIL: '+label);console.error(e.stdout||e.message);ok=false;}};run('lint','npm run lint');run('test','npm run test');run('build','npm run build');if(!ok){console.error('Pre-deploy check FAILED.');process.exit(1);}else{console.log('Pre-deploy check PASSED.');}\"",
+        "timeout": 120
+      }
+    }
+  ]
+}

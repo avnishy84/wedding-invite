@@ -1,0 +1,45 @@
+/* =============================================================
+   Design Tokens — Vintage Rajwada
+   All CSS custom properties for the wedding invitation site.
+   ============================================================= */
+
+:root {
+  /* ── Colours ─────────────────────────────────────────────── */
+  --ivory:       #F6ECD7;  /* paper background                  */
+  --parchment:   #EAD9B5;  /* aged panels                       */
+  --maroon:      #6E1423;  /* primary                           */
+  --maroon-deep: #4A0E19;
+  --gold:        #C79A3B;  /* foil accents, borders             */
+  --gold-light:  #E3C376;
+  --peacock:     #1D5C63;  /* secondary                         */
+  --saffron:     #D9822B;  /* highlights, use sparingly         */
+  --ink:         #2B1A14;  /* body text, never pure black       */
+
+  /* ── Spacing scale (4 px base) ──────────────────────────── */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-7:  28px;
+  --space-8:  32px;
+  --space-9:  36px;
+  --space-10: 40px;
+
+  /* ── Border radius ───────────────────────────────────────── */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg: 16px;
+
+  /* ── Z-index layers ──────────────────────────────────────── */
+  --z-topbar:   100;
+  --z-overlay:  150;
+  --z-lightbox: 200;
+
+  /* ── Font stacks (detailed faces declared in typography.css) */
+  --font-display:    'Cinzel Decorative', serif;
+  --font-script:     'Pinyon Script', cursive;
+  --font-body:       'Cormorant Garamond', Georgia, serif;
+  --font-devanagari: 'Tiro Devanagari Hindi', serif;
+}

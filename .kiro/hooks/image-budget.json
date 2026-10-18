@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Image Budget Check",
+      "trigger": "PostFileCreate",
+      "description": "Warn if a new image in public/images is over 200 KB or not WebP/AVIF.",
+      "matcher": "public/images/.*",
+      "action": {
+        "type": "command",
+        "command": "node -e \"const i=require('fs').readFileSync(0,'utf8');const d=JSON.parse(i);const f=d.file||'';if(!f)process.exit(0);const path=require('path');const ext=path.extname(f).toLowerCase();if(!['.webp','.avif'].includes(ext)){console.error('IMAGE-BUDGET: \\\"'+f+'\\\" is not WebP or AVIF. Convert before committing.');process.exit(1);}const bytes=require('fs').statSync(f).size;const kb=Math.round(bytes/1024);if(bytes>200*1024){console.error('IMAGE-BUDGET: \\\"'+f+'\\\" is '+kb+' KB — exceeds 200 KB limit.');process.exit(1);}console.log('IMAGE-BUDGET: \\\"'+f+'\\\" is '+kb+' KB — OK.');\"",
+        "timeout": 10
+      }
+    }
+  ]
+}

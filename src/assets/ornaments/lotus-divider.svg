@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" fill="none" stroke="currentColor" stroke-width="1.5">
+  <!-- Horizontal rule lines -->
+  <line x1="0" y1="40" x2="140" y2="40"/>
+  <line x1="260" y1="40" x2="400" y2="40"/>
+  <!-- Central lotus -->
+  <!-- Main upright petal -->
+  <path d="M 200 15 C 196 25 194 35 200 45 C 206 35 204 25 200 15 Z" fill="currentColor" opacity="0.2"/>
+  <path d="M 200 15 C 196 25 194 35 200 45 C 206 35 204 25 200 15 Z"/>
+  <!-- Left petals -->
+  <path d="M 200 42 C 186 35 178 28 176 20 C 184 22 192 30 200 42 Z" fill="currentColor" opacity="0.15"/>
+  <path d="M 200 42 C 186 35 178 28 176 20 C 184 22 192 30 200 42 Z"/>
+  <path d="M 200 44 C 183 42 172 36 168 26 C 178 26 190 34 200 44 Z" fill="currentColor" opacity="0.1"/>
+  <path d="M 200 44 C 183 42 172 36 168 26 C 178 26 190 34 200 44 Z"/>
+  <!-- Right petals (mirror) -->
+  <path d="M 200 42 C 214 35 222 28 224 20 C 216 22 208 30 200 42 Z" fill="currentColor" opacity="0.15"/>
+  <path d="M 200 42 C 214 35 222 28 224 20 C 216 22 208 30 200 42 Z"/>
+  <path d="M 200 44 C 217 42 228 36 232 26 C 222 26 210 34 200 44 Z" fill="currentColor" opacity="0.1"/>
+  <path d="M 200 44 C 217 42 228 36 232 26 C 222 26 210 34 200 44 Z"/>
+  <!-- Stem and water line -->
+  <path d="M 200 45 L 200 60" stroke-width="1"/>
+  <path d="M 160 60 Q 200 55 240 60" stroke-width="1"/>
+  <!-- Small decorative dots flanking the lotus -->
+  <circle cx="150" cy="40" r="3" fill="currentColor" stroke="none"/>
+  <circle cx="140" cy="40" r="2" fill="currentColor" stroke="none"/>
+  <circle cx="250" cy="40" r="3" fill="currentColor" stroke="none"/>
+  <circle cx="260" cy="40" r="2" fill="currentColor" stroke="none"/>
+  <!-- Decorative diamond accents -->
+  <path d="M 120 40 L 124 44 L 128 40 L 124 36 Z" fill="currentColor" stroke="none"/>
+  <path d="M 272 40 L 276 44 L 280 40 L 276 36 Z" fill="currentColor" stroke="none"/>
+</svg>

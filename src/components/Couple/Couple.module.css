@@ -1,0 +1,42 @@
+.couple {
+  background: var(--maroon);
+  color: var(--ivory);
+  padding: clamp(3rem, 8vw, 6rem) var(--space-6);
+  text-align: center;
+}
+
+.couple h2,
+.couple h3 {
+  color: var(--ivory);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.familyBlock {
+  padding: var(--space-8) 0;
+}
+
+.familyHeading {
+  font-family: var(--font-script);
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: var(--gold-light);
+  margin-bottom: var(--space-4);
+}
+
+.parents {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  opacity: 0.9;
+  margin: 0;
+}
+
+.coupleNote {
+  margin-top: var(--space-10);
+  font-style: italic;
+  opacity: 0.85;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}

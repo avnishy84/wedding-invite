@@ -1,0 +1,14 @@
+.ornamentDivider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-6) 0;
+  color: var(--gold);
+  width: 100%;
+}
+
+.ornamentDivider svg {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "i18n Parity Check",
+      "trigger": "PostFileSave",
+      "description": "When wedding.ts is saved, verify every en key in the strings block has a matching hi key.",
+      "matcher": "src/content/wedding\\.ts$",
+      "action": {
+        "type": "command",
+        "command": "node -e \"const i=require('fs').readFileSync(0,'utf8');const d=JSON.parse(i);const f=d.file||'';if(!f||!f.includes('wedding.ts'))process.exit(0);let src;try{src=require('fs').readFileSync(f,'utf8');}catch(e){process.exit(0);}const enStr=src.match(/strings[\\s\\S]*?en\\s*:\\s*\\{([\\s\\S]*?)\\}/);const hiStr=src.match(/strings[\\s\\S]*?hi\\s*:\\s*\\{([\\s\\S]*?)\\}/);if(!enStr||!hiStr){console.log('i18n-parity: could not parse strings block, skipping.');process.exit(0);}const getKeys=block=>[...block.matchAll(/(\\w+)\\s*:/g)].map(m=>m[1]);const ek=getKeys(enStr[1]);const hk=getKeys(hiStr[1]);const missing=ek.filter(k=>!hk.includes(k));if(missing.length){console.error('I18N-PARITY: en keys missing hi equivalent: '+missing.join(', '));process.exit(1);}else{console.log('i18n-parity: all '+ek.length+' en keys have hi equivalents.');}\"",
+        "timeout": 15
+      }
+    }
+  ]
+}
