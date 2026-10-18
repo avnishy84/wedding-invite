@@ -4,7 +4,6 @@ import { weddingData } from '../../content/wedding';
 import MandalaIcon from '../../assets/ornaments/mandala.svg?react';
 import ArchIcon from '../../assets/ornaments/arch.svg?react';
 import ToranIcon from '../../assets/ornaments/toran.svg?react';
-import { HeroRunners } from '../HeroRunners/HeroRunners';
 import styles from './Hero.module.css';
 
 export function Hero() {
@@ -29,7 +28,6 @@ export function Hero() {
       <div className={styles.archWrap} aria-hidden="true">
         <ArchIcon />
       </div>
-      <HeroRunners />
       <div className={styles.content}>
         <p className={styles.invocation}>{weddingData.meta.invocation[lang]}</p>
         <h1>

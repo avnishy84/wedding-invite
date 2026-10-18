@@ -44,9 +44,9 @@
 
 - [ ] 5.1 Create `OrnamentDivider` component — lotus/kalash SVG, aria-hidden
 - [ ] 5.2 Build `Hero` component — jharokha arch, couple names, date, invocation; shimmer animation; mandala
-- [x] 5.2a Build HeroRunners component (inline SVG groom + bride, CSS module, run-once, exit, reduced-motion hidden)
-- [x] 5.2b Test HeroRunners (renders aria-hidden, absent under reduced motion)
-- [x] 5.2c Verify: npm run checkall passes; manual check at 360 px and 1280 px
+- [ ] 5.2a Build HeroRunners component (inline SVG groom + bride, CSS module, run-once, exit, reduced-motion hidden)
+- [ ] 5.2b Test HeroRunners (renders aria-hidden, absent under reduced motion)
+- [ ] 5.2c Verify: npm run checkall passes; manual check at 360 px and 1280 px
 - [ ] 5.3 Build `Blessing` component — invocation text, family blessing panel
 - [ ] 5.4 Add reveal animation to Hero and Blessing via `useReveal`
 - [ ] 5.5 Write tests for Hero (renders names, date, invocation) and Blessing
